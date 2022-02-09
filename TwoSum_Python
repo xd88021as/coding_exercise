@@ -10,9 +10,3 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 if nums[i] + nums[j] == target:
                     return [i,j]
-        '''
-        for i in range(0,len(nums)):
-            num_to_find = target - nums[i]
-            temp_list = nums[:i] + nums[i+1:]
-            if num_to_find in temp_list:
-                return [i,temp_list.index(num_to_find) + 1]
